@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-pro">
+          <img
+            src="./assets/images/avatar_new.png"
+            alt="Dennyson Fonseca"
+            width="160" height="160"
+            decoding="async" loading="lazy"
+          >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Dennyson Fonseca">Dennyson Fonseca</h1>
+          <p class="title"><span id="role-rotator">Bioinformatician</span></p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dennyson@usp.br" class="contact-link">dennyson@usp.br</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+5511992021748" class="contact-link">+55 (11) 992021748</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1997-08-14">August 14, 1997</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>São Carlos - SP, Brazil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Jobs</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I hold a bachelor's degree in Biomedical Sciences and a PhD in Bioinformatics from the University of São Paulo (USP). I am currently a postdoctoral researcher at the Laboratory of Immunology and Molecular Regulation (EACH-USP). My work focuses on data analysis and visualization for biological and biomedical sciences. I have practical experience in managing FASTQ/BCF pipelines and preprocessing sequencing data in whole exome sequencing (WES) and transcriptomics (Bulk, Single-Cell [BD rhapsody and 10x genomics], and spatial transcriptomics [10x genomics]).
+          </p>
+
+          <p>
+            I design reproducible workflows, provide clear visual insights, and apply advanced statistics and experimental design (e.g., G*Power) to support robust study design. I primarily program in R, Python, Julia, and Bash (Linux) and am comfortable working with SSH on remote servers. I also develop software tools and APIs for data analysis. I speak advanced English and have collaborated with national and international teams.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/bioinfor_logo.png
+                " alt="design icon"
+                 width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Bioinformatician</h4>
+
+                <p class="service-item-text">
+                  End-to-end genomic and transcriptomic analysis at a professional, scientific publication-grade level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/datascientist.png"
+                 alt="Web development icon"
+                  width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Scientist</h4>
+
+                <p class="service-item-text">
+                  Statistically rigorous and explainable models that generate measurable impact for any type of data.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/back-end.png" alt="Web development icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Back-end Developer</h4>
+
+                <p class="service-item-text">
+                  Production-grade backends for data-driven apps: secure, fast, and well-documented.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/supervision.webp" alt="camera icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research Supervision</h4>
+
+                <p class="service-item-text">
+                  Hands-on support for study design, analysis pipelines, and writing.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h2>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ian.png" alt="Ian Antunes Ferreira Bahia" width="30" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MSc. Ian Antunes</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    As my co-supervisor and research coordinator, Dennyson has been an exceptional mentor throughout my transition from cytometry to immunology and bioinformatics. Coming from a background in biomedical sciences, he has mastered the interface between biology, statistics, and computation, with remarkable depth across all areas of multi-omics analysis. His expertise spans proteomics, transcriptomics, epigenomics, exosome profiling, variant calling, bulk and single-cell (including spatial) analyses, and flow cytometry data integration. Beyond his technical command, Dennyson is a builder of dynamic pipelines, statistical frameworks, and analytical tools that transform complex datasets into coherent biological narratives. Working under his coordination has been a deeply formative experience, one that has sharpened my understanding of experimental design, data modeling, and critical interpretation. His guidance combines scientific precision with genuine mentorship, shaping not only the direction of projects but also the mindset required for rigorous, interdisciplinary data-driven science.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/thay.png" alt="Thayná Silva-Sousa" width="30" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Thayná Silva-Sousa</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dennyson was one of my mentors during part of my exchange program in Germany, actively participating with guidance in bioinformatics, systems biology, and artificial intelligence for biological data. Dennyson played an essential role in my training and, together with two other mentors, we have three scientific publications together. Working under Dennyson's co-supervision was a fundamental experience for my growth in the field of data analysis.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/pedro.png" alt="Pedro Marçal" width="30" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MSc. Pedro Marçal</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I worked alongside Dennyson during my Master's at the University of São Paulo, where he, as a senior PhD student, was a pillar of support for new lab members. He possessed a combination of deep expertise in statistics and bioinformatics and a genuine talent for mentoring. Recognizing our partnership, our PI formalized this relationship by appointing him as my co-advisor. Dennyson's input was instrumental in refining my project for publication, providing dedicated guidance even during his international internship in Germany. His mentorship was critical to my development as a researcher, and our joint effort directly resulted in a publication in a high-impact journal. His work ethic is tremendous and his ability to deliver always impressed me. Working with him has been a privilege and I look forward to doing it again in the future.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/steiner.png" alt="Prof Dr. Alexandre Steiner" width="30" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Prof Dr. Alexandre Steiner</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dennyson actively participated in the analysis of single-cell RNAseq data (BD Rhapsody technology) in the article entitled: The greater splanchnic nerve preferentially regulates neutrophils over macrophages in a rat model of septic peritonitis. Dennyson was an excellent collaborator as a single-cell RNAseq data analyst.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+         <ul class="clients-list">
+            <li class="clients-item">
+              <a href="https://www.usp.br/" target="_blank" rel="noopener" aria-label="Universidade de São Paulo (USP)">
+                <img src="./assets/images/USP.png" alt="USP">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.itps.org.br/" target="_blank" rel="noopener" aria-label="Instituto Todos pela Saúde">
+                <img src="./assets/images/ITPS.png" alt="Instituto Todos pela Saúde">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.fm.usp.br/" target="_blank" rel="noopener" aria-label="Faculdade de Medicina da USP">
+                <img src="./assets/images/fmusp.png" alt="Faculdade de Medicina — USP">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">university of amazonia</h4>
+
+              <span>2015 — 2019</span>
+
+              <p class="timeline-text">
+                Degree in biomedicine from the University of Amazonia
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of São Paulo</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+               Ph.D. in bioinformatics from the University of São Paulo.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Berlin Institute of Healthy (BIH) - Charité, Germany</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+               PhD Sandwich Program (Visiting Researcher) at the Berlin Institute of Health (BIH) at Charité – Universitätsmedizin Berlin.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of São Paulo</h4>
+
+              <span>2025 — present</span>
+
+              <p class="timeline-text">
+                Postdoctoral fellow at the Immunology and Molecular Regulation Laboratory at EACH-USP.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bioinformatician [CNPq] - FMUSP</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                University of São Paulo School of Medicine (FMUSP):
+                Vertical transmission in HIV-1, HBV, and HTLV: characterization of placental microRNAs with anti-inflammatory and antiviral potential as therapeutic targets. Activities include pre-processing of fastq files from single-cell sequencing (RNAseq) using 10x genomics technology. In addition, they also include analysis and visualization of single-cell data in R and Python for publication.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bioinformatician [CNPq] - UFRJ</h4>
+
+              <span>2025 — 2025</span>
+
+              <p class="timeline-text">
+               Federal University of Rio de Janeiro (UFRJ):
+               Precision medicine for identifying biomarkers and searching for therapeutic targets in autoimmune and neurodegenerative diseases of the central nervous system. Activities include pre-processing of WES fastq files and Panel for variant calling. In addition, they also include consulting for groups that perform this type of analysis. Although completed, I continue to provide consulting and advisory services for pipeline development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Back-end developer- [ITPS]</h4>
+
+              <span>2025 — present</span>
+
+              <p class="timeline-text">
+                 Institute for Health - ITPS:
+               Development of API for LOINC term translation. Activities include SQL database development and API availability for dashboard – frontend. In addition, Levenshtein algorithm applications and generative artificial intelligence are used (application and use of openAI API key).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Postdoctoral research - EACH/USP</h4>
+
+              <span>2025 — present</span>
+
+              <p class="timeline-text">
+                 Institute for Health - ITPS:
+                Postdoctoral Fellow – Immunology and Molecular Regulation Laboratory – Prof. Sandra Muxel.
+                Postdoctoral project: Single-cell RNA sequencing and bulk-RNAseq as tools for understanding Leishmania-host interaction.
+              </p>
+
+            </li>
+
+           <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">PhD Candidate – Interunit of Bioinformatics, USP</h4>
+            <span>2021 — 2025</span>
+
+            <p class="timeline-text">
+              Doctoral thesis: Synergistic effect of COVID-19 and age on severe autoantibody levels,
+              characterized by a systemic immunological approach.
+            </p>
+
+            <p class="timeline-text">Two main publications associated with the thesis:</p>
+            <ol class="timeline-text">
+              <li>
+                Patients with severe COVID-19 have elevated levels of autoantibodies directed against
+                cardiolipin and platelet glycoprotein with age: a systems biology approach.
+                <em>NPJ Aging</em>, 2023.
+              </li>
+              <li>
+                Dysregulated autoantibodies targeting AGTR1 with accumulation of COVID-19 symptoms.
+                <em>NPJ Systems Biology and Applications</em>, 2024.
+              </li>
+            </ol>
+
+            <p class="timeline-text">
+              These publications include a broad approach to computational biology with advanced statistical
+              analysis and machine learning for quantitative proteome data.
+            </p>
+          </li>
+          
+
+          <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Colaboration - Immunology departament USP</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Neuroimmunology Laboratory at USP - Advisor: Alexander Steiner
+                Single-cell sequencing analysis performed for the article entitled: The greater splanchnic nerve preferentially regulates neutrophils over macrophages in a rat model of septic peritonitis.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming: R, Python, Julia, Bash/Shell, SQL</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Linux / SSH Server Usage</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud Computing</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Database Schema Design & Development</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">NGS Data Pre-processing</h5>
+                <data value="100">100%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Variant Calling</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Differential Expression Analysis</h5>
+                <data value="100">100%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Advanced Statistical Analysis</h5>
+                <data value="100">100%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Predictive Modeling (Machine Learning)</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Neural Networks (Deep Learning)</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Script Automation & Pipeline Development</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Predictive Model Automation</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">API Development</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Generative AI</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Project Management</h5>
+                <data value="100">100%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">GitHub & GitLab (Version Control)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Scientific articles</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- Filtros (isolados desta sessão) -->
+          <ul class="filter-list" id="pub-filters">
+            <li class="filter-item"><button class="active" data-pub-filter-btn>All</button></li>
+            <li class="filter-item"><button data-pub-filter-btn>Journal</button></li>
+            <li class="filter-item"><button data-pub-filter-btn>Shared the first authors</button></li>
+            <li class="filter-item"><button data-pub-filter-btn>Shared the last authors</button></li>
+          </ul>
+
+          <!-- Dropdown (mobile) isolado -->
+          <div class="filter-select-box" id="pub-select-box">
+            <button class="filter-select" data-pub-select>
+              <div class="select-value" data-pub-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-pub-select-item>All</button></li>
+              <li class="select-item"><button data-pub-select-item>Journal</button></li>
+              <li class="select-item"><button data-pub-select-item>Shared the first authors</button></li>
+              <li class="select-item"><button data-pub-select-item>Shared the last authors</button></li>
+            </ul>
+          </div>
+
+          <!-- Resumo de periódicos (somente no filtro Journal) -->
+          <div id="journal-summary" style="display:none; margin-top: 12px;">
+            <h4 class="h4" style="margin-bottom:14px;">Journals</h4>
+            <div id="journal-grid" class="journal-grid"></div>
+          </div>
+
+          <style>
+            /* grid de periódicos em cards */
+            .journal-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+              gap: 12px;
+            }
+            .journal-card {
+              background: rgba(255,255,255,.04);
+              border: 1px solid rgba(202, 202, 202, 0.08);
+              border-radius: 16px;
+              padding: 14px 16px;
+              box-shadow: 0 10px 30px rgba(195, 181, 111, 0.25);
+            }
+            .journal-card .name { font-weight: 100; margin-bottom: 6px; }
+            .journal-card .count { opacity: 1; font-size: .99rem; }
+          </style>
+
+          <!-- LISTA PADRÃO (All / First / Last) -->
+          <ul class="project-list" id="pub-list">
+
+            <!-- ========= 2025 ========= -->
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2025" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Integrative%20immunology%20identified%20interferome%20signatures%20in%20uveitis%20and%20systemic%20disease-associated%20uveitis" target="_blank" rel="noopener">
+                <h3 class="project-title">Integrative immunology identified interferome signatures in uveitis and systemic disease-associated uveitis</h3>
+                <p class="project-category">Frontiers in Immunology (2025)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2025" data-journal="Brain, Behavior, and Immunity">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20greater%20splanchnic%20nerve%20preferentially%20regulates%20neutrophils%20over%20macrophages%20in%20a%20rat%20model%20of%20septic%20peritonitis" target="_blank" rel="noopener">
+                <h3 class="project-title">The greater splanchnic nerve preferentially regulates neutrophils over macrophages in a rat model of septic peritonitis</h3>
+                <p class="project-category">Brain, Behavior, and Immunity (2025)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2025" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Long%20COVID-19%20autoantibodies%20and%20their%20potential%20effect%20on%20fertility" target="_blank" rel="noopener">
+                <h3 class="project-title">Long COVID-19 autoantibodies and their potential effect on fertility</h3>
+                <p class="project-category">Frontiers in Immunology (2025)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2025" data-journal="npj Systems Biology and Applications">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dysregulated%20autoantibodies%20targeting%20AGTR1%20are%20associated%20with%20the%20accumulation%20of%20COVID-19%20symptoms" target="_blank" rel="noopener">
+                <h3 class="project-title">Dysregulated autoantibodies targeting AGTR1 are associated with the accumulation of COVID-19 symptoms</h3>
+                <p class="project-category">npj Systems Biology and Applications (2025) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2025" data-journal="Clinical Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Stimulation%20of%20endothelin-1%20production%20by%20autoantibodies%20present%20in%20patients%20with%20scleroderma%20renal%20crisis" target="_blank" rel="noopener">
+                <h3 class="project-title">Stimulation of endothelin-1 production by autoantibodies present in patients with scleroderma renal crisis</h3>
+                <p class="project-category">Clinical Immunology (2025)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal last-author" data-year="2025" data-journal="Scientific Reports">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Gene%20regulatory%20networks%20analysis%20for%20the%20discovery%20of%20prognostic%20genes%20in%20gliomas" target="_blank" rel="noopener">
+                <h3 class="project-title">Gene regulatory networks analysis for the discovery of prognostic genes in gliomas</h3>
+                <p class="project-category">Scientific Reports (2025) — <strong>shared last author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal last-author" data-year="2025" data-journal="Stem Cells Translational Medicine">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Artificial%20intelligence%20and%20systems%20biology%20analysis%20in%20stem%20cell%20research%20and%20therapeutics%20development" target="_blank" rel="noopener">
+                <h3 class="project-title">Artificial intelligence and systems biology analysis in stem cell research and therapeutics development</h3>
+                <p class="project-category">Stem Cells Translational Medicine (2025) — <strong>shared last author</strong></p>
+              </a>
+            </li>
+
+            <!-- ========= 2024 ========= -->
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2024" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Blocking%20the%20CTLA-4%20and%20PD-1%20pathways%20during%20pulmonary%20paracoccidioidomycosis" target="_blank" rel="noopener">
+                <h3 class="project-title">Blocking the CTLA-4 and PD-1 pathways during pulmonary paracoccidioidomycosis improves immunity…</h3>
+                <p class="project-category">Frontiers in Immunology (2024)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2024" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Immunological%20signatures%20unveiled%20by%20integrative%20systems%20vaccinology%20characterization%20of%20dengue%20vaccination%20trials%20and%20natural%20infection" target="_blank" rel="noopener">
+                <h3 class="project-title">Immunological signatures unveiled by integrative systems vaccinology characterization of dengue…</h3>
+                <p class="project-category">Frontiers in Immunology (2024)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal last-author" data-year="2024" data-journal="Stem Cells">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20global%20evolution%20and%20impact%20of%20systems%20biology%20and%20artificial%20intelligence%20in%20stem%20cell%20research%20and%20therapeutics%20development:%20a%20scoping%20review" target="_blank" rel="noopener">
+                <h3 class="project-title">The global evolution and impact of systems biology and artificial intelligence in stem cell research and therapeutics development: a scoping review</h3>
+                <p class="project-category">STEM CELLS (2024) — <strong>shared last author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2024" data-journal="Life (Basel)">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20Impact%20of%20Diabetes%20Education%20on%20Continuous%20Glucose%20Monitoring%20in%20SUS-Dependent%20Patients" target="_blank" rel="noopener">
+                <h3 class="project-title">The Impact of Diabetes Education on Continuous Glucose Monitoring in SUS-Dependent Patients…</h3>
+                <p class="project-category">Life (Basel) (2024)</p>
+              </a>
+            </li>
+
+            <!-- ========= 2023 ========= -->
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Journal of Medical Virology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Integrative%20systems%20immunology%20uncovers%20molecular%20networks%20of%20the%20cell%20cycle%20that%20stratify%20COVID-19%20severity" target="_blank" rel="noopener">
+                <h3 class="project-title">Integrative systems immunology uncovers molecular networks of the cell cycle that stratify COVID-19 severity</h3>
+                <p class="project-category">Journal of Medical Virology (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Autoimmunity Reviews">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Autoantibodies%20targeting%20G%20protein-coupled%20receptors:%20An%20evolving%20history%20in%20autoimmunity.%20Report%20of%20the%204th%20international%20symposium" target="_blank" rel="noopener">
+                <h3 class="project-title">Autoantibodies targeting GPCRs: Report of the 4th international symposium</h3>
+                <p class="project-category">Autoimmunity Reviews (2023)</p>
+              </a>
+            </li>
+
+            <!-- Shared FIRST author (2023) -->
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2023" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Systematic%20review%20and%20meta-analysis%20of%20cell%20therapy%20for%20COVID-19:%20global%20clinical%20trial%20landscape" target="_blank" rel="noopener">
+                <h3 class="project-title">Systematic review and meta-analysis of cell therapy for COVID-19: global clinical trial landscape…</h3>
+                <p class="project-category">Frontiers in Immunology (2023) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2023" data-journal="npj Aging">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Severe%20COVID-19%20patients%20exhibit%20elevated%20levels%20of%20autoantibodies%20targeting%20cardiolipin%20and%20platelet%20glycoprotein%20with%20age" target="_blank" rel="noopener">
+                <h3 class="project-title">Severe COVID-19 patients exhibit elevated autoantibodies against cardiolipin and platelet glycoprotein with age</h3>
+                <p class="project-category">npj Aging (2023) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Frontiers in Public Health">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=A%20higher%20number%20of%20SARS-CoV-2%20infections%20in%20quilombola%20communities%20than%20in%20the%20local%20population%20in%20Brazil" target="_blank" rel="noopener">
+                <h3 class="project-title">A higher number of SARS-CoV-2 infections in quilombola communities than in the local population in Brazil</h3>
+                <p class="project-category">Frontiers in Public Health (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2023" data-journal="Cytotherapy">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Mesenchymal%20Stem/Stromal%20Cells%20systematic%20review%20and%20meta-analysis%20of%20cell%20therapy%20for%20COVID-19" target="_blank" rel="noopener">
+                <h3 class="project-title">Mesenchymal Stem/Stromal Cells — systematic review & meta-analysis for COVID-19 (abstract)</h3>
+                <p class="project-category">Cytotherapy (2023) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Frontiers in Cellular and Infection Microbiology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rare%20genetic%20variants%20involved%20in%20multisystem%20inflammatory%20syndrome%20in%20children:%20a%20multicenter%20Brazilian%20cohort%20study" target="_blank" rel="noopener">
+                <h3 class="project-title">Rare genetic variants involved in MIS-C: a multicenter Brazilian cohort</h3>
+                <p class="project-category">Frontiers in Cellular and Infection Microbiology (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Interferome%20signature%20dynamics%20during%20the%20anti-dengue%20immune%20response" target="_blank" rel="noopener">
+                <h3 class="project-title">Interferome signature dynamics during the anti-dengue immune response</h3>
+                <p class="project-category">Frontiers in Immunology (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2023" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Autoantibodies%20from%20patients%20with%20kidney%20allograft%20vasculopathy%20stimulate%20a%20proinflammatory%20switch%20in%20endothelial%20cells%20and%20monocytes" target="_blank" rel="noopener">
+                <h3 class="project-title">Autoantibodies from kidney allograft vasculopathy trigger a PAR1–TNF-α pro-inflammatory switch</h3>
+                <p class="project-category">Frontiers in Immunology (2023) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Journal of Medical Virology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Neuroimmunology%20of%20rabies:%20New%20insights%20into%20an%20ancient%20disease" target="_blank" rel="noopener">
+                <h3 class="project-title">Neuroimmunology of rabies: new insights into an ancient disease</h3>
+                <p class="project-category">Journal of Medical Virology (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Life (Basel)">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=COVID-19%20Vaccination%20and%20Serological%20Profile%20of%20a%20Brazilian%20University%20Population" target="_blank" rel="noopener">
+                <h3 class="project-title">COVID-19 vaccination and serological profile of a Brazilian university population</h3>
+                <p class="project-category">Life (Basel) (2023)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2023" data-journal="Journal of Medical Virology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Cross-sectional%20analysis%20reveals%20autoantibody%20signatures%20associated%20with%20COVID-19%20severity" target="_blank" rel="noopener">
+                <h3 class="project-title">Cross-sectional analysis reveals autoantibody signatures associated with COVID-19 severity</h3>
+                <p class="project-category">Journal of Medical Virology (2023)</p>
+              </a>
+            </li>
+
+            <!-- ========= 2022 ========= -->
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2022" data-journal="Cells">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Severe%20COVID-19%20Shares%20a%20Common%20Neutrophil%20Activation%20Signature%20with%20Other%20Acute%20Inflammatory%20States" target="_blank" rel="noopener">
+                <h3 class="project-title">Severe COVID-19 shares a common neutrophil activation signature with other acute inflammatory states</h3>
+                <p class="project-category">Cells (2022)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2022" data-journal="Nature Communications">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Autoantibodies%20targeting%20GPCRs%20and%20RAS-related%20molecules%20associate%20with%20COVID-19%20severity" target="_blank" rel="noopener">
+                <h3 class="project-title">Autoantibodies targeting GPCRs and RAS-related molecules associate with COVID-19 severity</h3>
+                <p class="project-category">Nature Communications (2022)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2022" data-journal="Frontiers in Immunology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dysregulated%20autoantibodies%20targeting%20vaso-%20and%20immunoregulatory%20receptors%20in%20Post%20COVID%20Syndrome%20correlate%20with%20symptom%20severity" target="_blank" rel="noopener">
+                <h3 class="project-title">Dysregulated autoantibodies in Post-COVID Syndrome correlate with symptom severity</h3>
+                <p class="project-category">Frontiers in Immunology (2022)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal first-author" data-year="2022" data-journal="Heliyon">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Cross-sectional%20analysis%20of%20students%20and%20school%20workers%20reveals%20a%20high%20number%20of%20asymptomatic%20SARS-CoV-2%20infections" target="_blank" rel="noopener">
+                <h3 class="project-title">Cross-sectional analysis reveals a high number of asymptomatic SARS-CoV-2 infections during school reopening</h3>
+                <p class="project-category">Heliyon (2022) — <strong>shared first author</strong></p>
+              </a>
+            </li>
+
+            <!-- ========= 2021 ========= -->
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="International Journal for Equity in Health">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=High%20prevalence%20of%20anti-SARS-CoV-2%20IgG%20antibody%20in%20the%20Xikrin%20of%20Bacaj%C3%A1%20(Kayap%C3%B3)%20indigenous%20population%20in%20the%20Brazilian%20Amazon" target="_blank" rel="noopener">
+                <h3 class="project-title">High prevalence of anti-SARS-CoV-2 IgG in Xikrin of Bacajá (Kayapó) indigenous population</h3>
+                <p class="project-category">International Journal for Equity in Health (2021)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="JCI Insight">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20relationship%20between%20cytokine%20and%20neutrophil%20gene%20network%20distinguishes%20SARS-CoV-2-infected%20patients%20by%20sex%20and%20age" target="_blank" rel="noopener">
+                <h3 class="project-title">Cytokine–neutrophil gene network distinguishes SARS-CoV-2 infected patients by sex and age</h3>
+                <p class="project-category">JCI Insight (2021)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="npj Biofilms and Microbiomes">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20structure%20of%20Brazilian%20Amazonian%20gut%20microbiomes%20in%20the%20process%20of%20urbanisation" target="_blank" rel="noopener">
+                <h3 class="project-title">The structure of Brazilian Amazonian gut microbiomes in the process of urbanisation</h3>
+                <p class="project-category">npj Biofilms and Microbiomes (2021)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="PLoS Neglected Tropical Diseases">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20clinical%20spectrum%20and%20immunopathological%20mechanisms%20underlying%20ZIKV-induced%20neurological%20manifestations" target="_blank" rel="noopener">
+                <h3 class="project-title">Clinical spectrum and immunopathology underlying ZIKV-induced neurological manifestations</h3>
+                <p class="project-category">PLoS Neglected Tropical Diseases (2021)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="Scientific Reports">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=The%20network%20interplay%20of%20interferon%20and%20Toll-like%20receptor%20signaling%20pathways%20in%20the%20anti-Candida%20immune%20response" target="_blank" rel="noopener">
+                <h3 class="project-title">The network interplay of interferon and Toll-like receptor signaling in anti-Candida response</h3>
+                <p class="project-category">Scientific Reports (2021)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="journal" data-year="2021" data-journal="Journal of Medical Virology">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/?term=COVID-19%20vaccinations:%20The%20unknowns,%20challenges,%20and%20hopes" target="_blank" rel="noopener">
+                <h3 class="project-title">COVID-19 vaccinations: the unknowns, challenges, and hopes</h3>
+                <p class="project-category">Journal of Medical Virology (2021)</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+      <!-- Ordenação + filtros + resumo de periódicos em “caixinhas” -->
+     <script>
+      (function () {
+        // Escopo apenas da seção Publications
+        const section = document.querySelector('article.portfolio[data-page="portfolio"]');
+        if (!section) return;
+
+        /* ==== Força títulos brancos (lista + cards de "Journal") ==== */
+        const style = document.createElement('style');
+        style.textContent = `
+          #pub-list .project-title { color:#fff !important; }
+          #pub-list a:hover .project-title { opacity:.9; }
+          #journal-summary .journal-card .name { color:#fff !important; }
+        `;
+        document.head.appendChild(style);
+
+        const list = section.querySelector('#pub-list');
+        if (!list) return;
+
+        // Ordena por ano (desc)
+        const items = Array.from(list.children);
+        items.sort((a, b) => {
+          const ay = parseInt(a.getAttribute('data-year'), 10) || 0;
+          const by = parseInt(b.getAttribute('data-year'), 10) || 0;
+          return by - ay;
+        });
+        items.forEach(li => list.appendChild(li));
+
+        // Controles desta seção
+        const btns         = section.querySelectorAll('[data-pub-filter-btn]');
+        const select       = section.querySelector('[data-pub-select]');
+        const selectItems  = section.querySelectorAll('[data-pub-select-item]');
+        const selectValue  = section.querySelector('[data-pub-selecct-value]');
+        const journalBlock = section.querySelector('#journal-summary');
+        const journalGrid  = section.querySelector('#journal-grid');
+
+        const norm = s => (s || '').trim().toLowerCase();
+
+        // Constrói os cards de Journals (nome + contagem)
+        function buildJournalSummary() {
+          if (!journalGrid) return;
+          journalGrid.innerHTML = '';
+          const counts = {};
+          Array.from(list.children).forEach(li => {
+            const j = li.getAttribute('data-journal') || '';
+            if (!j) return;
+            counts[j] = (counts[j] || 0) + 1;
+          });
+
+          Object.entries(counts)
+            .sort((a,b) => a[0].localeCompare(b[0]))
+            .forEach(([name, n]) => {
+              const card = document.createElement('div');
+              card.className = 'journal-card';
+
+              const nameEl = document.createElement('div');
+              nameEl.className = 'name';
+              nameEl.textContent = name;
+
+              const countEl = document.createElement('div');
+              countEl.className = 'count';
+              countEl.textContent = n === 1 ? '1 publication' : `${n} publications`;
+
+              card.appendChild(nameEl);
+              card.appendChild(countEl);
+              journalGrid.appendChild(card);
+            });
+        }
+
+        // Aplica filtro (All / Journal / First / Last)
+        function applyFilter(target) {
+          const rows = Array.from(list.children);
+
+          if (target === 'journal') {
+            list.style.display = 'none';
+            if (journalBlock) {
+              journalBlock.style.display = '';
+              buildJournalSummary();
+            }
+            // mantém active nos <li> (mesmo ocultos)
+            rows.forEach(li => li.classList.add('active'));
+            return;
+          } else {
+            list.style.display = '';
+            if (journalBlock) journalBlock.style.display = 'none';
+          }
+
+          rows.forEach(li => li.classList.remove('active'));
+
+          if (target === 'all') {
+            rows.forEach(li => li.classList.add('active'));
+            return;
+          }
+
+          const catMatch = c => (c || '').toLowerCase();
+          if (target === 'shared the first authors') {
+            rows
+              .filter(li => catMatch(li.getAttribute('data-category')).includes('first-author'))
+              .forEach(li => li.classList.add('active'));
+          } else if (target === 'shared the last authors') {
+            rows
+              .filter(li => catMatch(li.getAttribute('data-category')).includes('last-author'))
+              .forEach(li => li.classList.add('active'));
+          } else {
+            // fallback -> mostra tudo
+            rows.forEach(li => li.classList.add('active'));
+          }
+        }
+
+        function setActive(label) {
+          const target = norm(label);
+          btns.forEach(b => b.classList.toggle('active', norm(b.textContent) === target));
+          if (selectValue) selectValue.textContent = label;
+          applyFilter(target);
+        }
+
+        // Eventos (somente desta seção)
+        btns.forEach(b => b.addEventListener('click', (e) => {
+          e.stopPropagation();
+          setActive(b.textContent);
+        }));
+
+        if (select) {
+          select.addEventListener('click', (e) => {
+            e.stopPropagation();
+            select.classList.toggle('active');
+          });
+        }
+        selectItems.forEach(si => si.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const txt = si.textContent;
+          setActive(txt);
+          if (select) select.classList.remove('active');
+        }));
+
+        // Estado inicial
+        setActive('All');
+      })();
+      
+      </script>
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="jobs" data-page="jobs">
+
+        <header>
+          <h2 class="h2 article-title">Work carried out</h2>
+        </header>
+        
+        <section class="blog-posts">
+           <!-- Blog detail modal -->
+          <div class="modal-container" data-blog-modal-container>
+            <div class="overlay" data-blog-overlay></div>
+
+            <section class="blog-modal">
+              <button class="modal-close-btn" data-blog-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <figure class="blog-modal-banner">
+                <img data-blog-modal-img src="" alt="" loading="lazy">
+              </figure>
+
+              <div class="blog-modal-content">
+                <h3 class="h3 blog-modal-title" data-blog-modal-title></h3>
+                <p class="blog-modal-meta" data-blog-modal-meta></p>
+                <p class="blog-modal-text" data-blog-modal-text></p>
+              </div>
+            </section>
+          </div>
+          <style>
+            /* Usa o mesmo backdrop/layout do seu modal existente */
+            .modal-container { display:none; position:fixed; inset:0; z-index:9999; }
+            .modal-container.active { display:block; }
+            .modal-container .overlay { position:absolute; inset:0; background:#0008; }
+
+            .blog-modal{
+              position:relative;
+              max-width: 980px;
+              margin: min(8vh,60px) auto;
+              background: var(--eerie-black-2, #1e1e1e);
+              border: 1px solid rgba(255,255,255,.06);
+              border-radius: 20px;
+              padding: 20px;
+              box-shadow: 0 10px 40px rgba(0,0,0,.35);
+            }
+            .modal-close-btn{
+              position:absolute; top:10px; right:10px;
+              width:40px; height:40px; border-radius:12px;
+              display:grid; place-items:center;
+              background: rgba(255,255,255,.06); border:0; cursor:pointer;
+            }
+
+            .blog-modal-banner img{
+              width:100%; height:auto; border-radius: 14px;
+              display:block; margin-bottom:16px;
+            }
+
+            .blog-modal-title{ margin: 8px 0 4px; }
+            .blog-modal-meta{ opacity:.75; margin-bottom:12px; }
+            .blog-modal-text{ line-height:1.7; }
+          </style>
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/BD_analysis.png" alt="Singel Cell RNASeq" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Bioinformatician</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Singel Cell RNASeq</h3>
+
+                  <p class="blog-text">
+                   Analysis of single cell data from the Rhapsody database.
+                   The analysis was performed from CBCL -> Fastq -> data visualization with Seurat in R.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/PCA.png" alt="Principal Component analysis" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data scientist - bioinformatics</p>
+
+                    <span class="dot"></span>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Principal Component analysis</h3>
+
+                  <p class="blog-text">
+                    Principal component analysis and exploration of all components that explain data variability
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/heat.png" alt="Hierarchical clustering" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data scientist - bioinformatics</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Hierarchical clustering</h3>
+
+                  <p class="blog-text">
+                    Hierarchical clustering analysis with visualization using tools such as ggplot2 and R.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/releffect.png" alt="Relative Effect Analysis" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Scientist</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Relative Effect Analysis</h3>
+
+                  <p class="blog-text">
+                    This analysis is performed using MANOVA, and the confidence interval is calculated using bootstrap.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/cell.png" alt="Cell communitcation - scRNAseq analysis" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Bioinformatician</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Cell communitcation - scRNAseq analysis</h3>
+
+                  <p class="blog-text">
+                    Receptor-ligand interaction between specific populations of single-cell RNA-seq.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/itps_back.png" alt="Back-end developer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Developer</p>
+
+                    <span class="dot"></span>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Back-end developer</h3>
+
+                  <p class="blog-text">
+                    Back-end structure developed for Interoperability and Organization of Health Standards - Brazil.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <!-- MAP: São Carlos - SP -->
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps?q=S%C3%A3o%20Carlos%2C%20SP&z=12&output=embed"
+              width="100%" height="360" style="border:0" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </figure>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <!--
+            Envia para dennyson@usp.br e CC para dennyleandro@gmail.com via FormSubmit
+            Se quiser alterar o destino principal, troque o e-mail no action.
+          -->
+          <form 
+            action="https://formsubmit.co/dennyson@usp.br"
+            method="POST"
+            class="form"
+            data-form>
+
+            <!-- FormSubmit options -->
+            <input type="hidden" name="_subject" value="New message from your website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_cc" value="dennyleandro@gmail.com">
+            <!-- após enviar, volta para a própria página (ajuste se quiser uma página de obrigado) -->
+            <input type="hidden" name="_next" value="#contact">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <!-- campo honeypot para anti-bot (fica escondido via CSS do template) -->
+            <input type="text" name="_honey" style="display:none">
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
