@@ -3,10 +3,97 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
+/* ==== Footer fixo — versão compacta ==== */
+.site-footer.sticky{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 50;
+  background: rgba(26,26,26,.92);
+  border-top: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(4px);
+}
 
+/* — menor fonte / padding / gaps — */
+.site-footer .footer-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6px 12px calc(6px + env(safe-area-inset-bottom));
+  font-size: .80rem;        /* antes .85rem */
+  line-height: 1.15;        /* mais “colado” */
+  color: #d9d9d9;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto; /* brand | addr | billing | legal */
+  gap: 10px;                /* antes 14px */
+  align-items: center;
+  justify-items: center;    /* centraliza cada coluna */
+  text-align: center;
+}
+
+/* links */
+.site-footer a{ color:#9ecbff; text-decoration:none }
+.site-footer a:hover{ text-decoration:underline }
+
+/* Deixa cada coluna caber numa linha, cortando com “...” se precisar */
+.site-footer .brand,
+.site-footer .addr{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Billing em linha única, bem compacto */
+.site-footer .billing{
+  display: inline-flex;
+  gap: 8px;                 /* antes 6/10 */
+  align-items: center;
+  white-space: nowrap;
+}
+.site-footer .billing br{ display:none }     /* evita quebra de linha */
+.site-footer .billing::before{ content:""; } /* (só pra garantir sem quebra) */
+
+/* Coluna Legal, separada e compacta */
+.site-footer .legal{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;                 /* antes 10px */
+}
+.site-footer .legal .dot{ opacity:.7 }
+
+/* Mobile: empilha, mas continua pequeno */
+@media (max-width: 899px){
+  .site-footer .footer-inner{
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+  }
+  .site-footer .billing{
+    display: grid;          /* volta a duas linhas no mobile se precisar */
+    gap: 4px;
+    justify-items: center;
+    white-space: normal;
+  }
+}
+
+/* dá espaço pro conteúdo não colidir com o footer menor */
+main{ padding-bottom: 64px; }  /* antes 84px; ajuste fino 56–72px conforme achar */
+
+
+
+/* Páginas legais (Privacy/Terms): texto e links brancos no tema escuro */
+.legal-doc { color: #fff; }
+
+.legal-doc h1, .legal-doc h2, .legal-doc h3,
+.legal-doc p,  .legal-doc li, .legal-doc time { color: #fff; }
+
+.legal-doc a:link,
+.legal-doc a:visited { color: #fff; text-decoration: underline; }
+
+.legal-doc a:hover,
+.legal-doc a:focus { color: #fff; opacity: .9; }
+
+.legal-doc a:active { color: #fff; opacity: .8; }
 
 
 
