@@ -1614,19 +1614,17 @@
             Envia para dennyson@usp.br e CC para dennyleandro@gmail.com via FormSubmit
             Se quiser alterar o destino principal, troque o e-mail no action.
           -->
-          <form 
-            action="https://formsubmit.co/dennyson@usp.br"
-            method="POST"
-            class="form"
-            data-form>
-
-            <!-- FormSubmit options -->
-            <input type="hidden" name="_subject" value="New message from your website">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="true">
-            <input type="hidden" name="_cc" value="dennyleandro@gmail.com">
-            <!-- após enviar, volta para a própria página (ajuste se quiser uma página de obrigado) -->
-            <input type="hidden" name="_next" value="#contact">
+           
+            <form action="https://formsubmit.co/dennyson@usp.br" method="POST" class="form" data-form>
+              <!-- opções -->
+              <input type="hidden" name="_subject"   value="New message from your website">
+              <input type="hidden" name="_template"  value="table">
+              <input type="hidden" name="_captcha"   value="true">
+              <input type="hidden" name="_cc"        value="dennyleandro@gmail.com">
+              <!-- redireciona de volta para sua página -->
+              <input type="hidden" name="_next"      value="https://dennyson83.github.io/my-portfolio/?sent=1#contact">
+              <!-- resto do formulário... -->
+            </form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>

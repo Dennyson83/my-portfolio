@@ -224,3 +224,6 @@ const elementToggleFunc = (elem) => elem.classList.toggle('active');
   }
 })();
 
+if (new URLSearchParams(location.search).get('sent') === '1') {
+  "message sent successfully"
+}
