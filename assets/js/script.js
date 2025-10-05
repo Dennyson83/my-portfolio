@@ -224,6 +224,22 @@ const elementToggleFunc = (elem) => elem.classList.toggle('active');
   }
 })();
 
-if (new URLSearchParams(location.search).get('sent') === '1') {
-  "message sent successfully"
-}
+
+// Coloque no final do seu script.js
+(function () {
+  const params = new URLSearchParams(location.search);
+  if (params.get('sent') === '1') {
+    const toast = document.createElement('div');
+    toast.textContent = 'Message sent successfully!';
+    toast.style.cssText = `
+      position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%);
+      background: rgba(25,25,25,.95); color: #fff; 
+      border: 1px solid rgba(255,255,255,.12); 
+      border-radius: 10px; padding: 10px 14px; 
+      z-index: 9999; box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      font-size: 0.95rem;
+    `;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 4000);
+  }
+})();

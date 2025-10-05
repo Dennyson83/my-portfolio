@@ -1606,42 +1606,44 @@
           </figure>
         </section>
 
-        <!-- CONTACT FORM -->
+       <!-- CONTACT FORM -->
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <!--
-            Envia para dennyson@usp.br e CC para dennyleandro@gmail.com via FormSubmit
-            Se quiser alterar o destino principal, troque o e-mail no action.
-          -->
-           
-            <form action="https://formsubmit.co/dennyson@usp.br" method="POST" class="form" data-form>
-              <!-- opções -->
-              <input type="hidden" name="_subject"   value="New message from your website">
-              <input type="hidden" name="_template"  value="table">
-              <input type="hidden" name="_captcha"   value="true">
-              <input type="hidden" name="_cc"        value="dennyleandro@gmail.com">
-              <!-- redireciona de volta para sua página -->
-              <input type="hidden" name="_next"      value="https://dennyson83.github.io/my-portfolio/?sent=1#contact">
-              <!-- resto do formulário... -->
-            </form>
+          <!-- Envia p/ dennyson@usp.br e CC para dennyleandro@gmail.com via FormSubmit -->
+          <form 
+            action="https://formsubmit.co/dennyson@usp.br"
+            method="POST"
+            class="form"
+            data-form>
 
+            <!-- opções do FormSubmit -->
+            <input type="hidden" name="_subject"   value="New message from your website">
+            <input type="hidden" name="_template"  value="table">
+            <input type="hidden" name="_captcha"   value="true"> <!-- coloque 'false' se quiser testar sem captcha -->
+            <input type="hidden" name="_cc"        value="dennyleandro@gmail.com">
+            <input type="hidden" name="_next"      value="https://dennyson83.github.io/my-portfolio/?sent=1#contact">
+            <!-- (opcional) auto-resposta para quem envia -->
+            <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem e retornaremos em breve. — DF Bioinformatics">
+
+            <!-- campos visíveis (precisam estar DENTRO do <form>) -->
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text"   name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email"  name="email"    class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <!-- campo honeypot para anti-bot (fica escondido via CSS do template) -->
+            <!-- honeypot anti-bot -->
             <input type="text" name="_honey" style="display:none">
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
           </form>
         </section>
+
 
         <section class="service" id="billing">
           <h3 class="h3 service-title">Billing & Invoices</h3>
